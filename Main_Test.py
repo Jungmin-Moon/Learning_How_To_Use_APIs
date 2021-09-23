@@ -11,7 +11,7 @@ from pyxivapi.models import Filter, Sort
 
 
 async def findCharacterTest(): 
-    client = pyxivapi.XIVAPIClient(api_key = "d0d5e08c4eae43418ed8961aa8ab98da6d73185a77854606ae9d87313d6923d6")
+    client = pyxivapi.XIVAPIClient(api_key = "")
     character = await client.character_search(
         world = "Jenova", 
         forename = "Lucky", 
@@ -22,7 +22,7 @@ async def findCharacterTest():
     await client.session.close()
     
 async def findItem(): 
-    client = pyxivapi.XIVAPIClient(api_key = "d0d5e08c4eae43418ed8961aa8ab98da6d73185a77854606ae9d87313d6923d6")
+    client = pyxivapi.XIVAPIClient(api_key = "")
     
     item = await client.index_search(
         name = "Curtana Ultima", 
@@ -42,7 +42,7 @@ async def findItem():
     await client.session.close()
     
 async def getItemById():
-    client = pyxivapi.XIVAPIClient(api_key = "d0d5e08c4eae43418ed8961aa8ab98da6d73185a77854606ae9d87313d6923d6")
+    client = pyxivapi.XIVAPIClient(api_key = "")
     
     itemID = await client.index_by_id(
         index = "Item", 
@@ -55,7 +55,7 @@ async def getItemById():
     await client.session.close()
     
 async def getRecipe():
-    client = pyxivapi.XIVAPIClient(api_key = "d0d5e08c4eae43418ed8961aa8ab98da6d73185a77854606ae9d87313d6923d6")
+    client = pyxivapi.XIVAPIClient(api_key = "")
     recipe = await client.index_search(
         name = "Smoked Chicken",
         indexes = ["Recipes"],
