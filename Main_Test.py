@@ -97,6 +97,23 @@ if __name__ == '__main__':
     #loop.run_until_complete(loreSearch())
     
     
+    #Character, fc, lore, actions for Action, PVPAction and craftAction probably
+    #Use string[a:b] to get substring [inclusive : exclusive]
+    print("Enter your search: ")
+    userInput = input();
+    
+    if "action" in userInput: 
+        loop.run_until_complete()
+        
+    elif "item" in userInput: 
+        loop.run_until_complete()
+        
+    elif "recipe" in userInput:
+        loop.run_until_complete() 
+    elif "free company" in userInput: 
+        loop.run_until_complete()
+    
+    
     
 
     
